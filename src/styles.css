@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+
+  /* IMAGEM DE FUNDO */
+  background: 
+    linear-gradient(rgba(40,25,15,0.75), rgba(40,25,15,0.85)),
+    url('https://images.unsplash.com/photo-1521587760476-6c12a4b040da');
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  color: #fff8e7;
+}
+
+/* HEADER */
+header {
+  padding: 40px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 55px;
+  color: #f5d28a;
+  text-shadow: 3px 3px 10px #000;
+}
+
+/* SEÇÕES */
+section {
+  width: 85%;
+  margin: 60px auto;
+  padding: 40px;
+  text-align: center;
+
+  background: rgba(30, 18, 10, 0.75);
+  border: 1px solid rgba(255, 217, 138, 0.4);
+  border-radius: 20px;
+
+  backdrop-filter: blur(6px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+/* TÍTULOS */
+h2 {
+  color: #ffd98a;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 20px;
+}
+
+/* SELECTS */
+select {
+  padding: 12px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+
+  background: rgba(255,255,255,0.9);
+  color: #3b2618;
+  font-weight: bold;
+}
+
+/* BOTÃO */
+button {
+  padding: 12px 25px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 12px;
+
+  background: #d6a96b;
+  color: #3b2618;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ffd98a;
+  transform: scale(1.05);
+}

@@ -1,0 +1,29 @@
+<section>
+  <h2>Controlar conteúdo da página</h2>
+
+  <select [(ngModel)]="textoHeader">
+    <option *ngFor="let opcao of opcoesHeader" [value]="opcao">
+      {{ opcao }}
+    </option>
+  </select>
+
+  <select [(ngModel)]="textoAbout">
+    <option *ngFor="let opcao of opcoesAbout" [value]="opcao">
+      {{ opcao }}
+    </option>
+  </select>
+
+  <select [(ngModel)]="textoServices">
+    <option *ngFor="let opcao of opcoesServices" [value]="opcao">
+      {{ opcao }}
+    </option>
+  </select>
+
+  <select [(ngModel)]="textoContact">
+    <option *ngFor="let opcao of opcoesContact" [value]="opcao">
+      {{ opcao }}
+    </option>
+  </select>
+
+  <button (click)="enviar()">Atualizar página</button>
+</section>
